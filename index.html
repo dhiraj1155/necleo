@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Necleo</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Necleo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 </head>
+
 <body>
     <!-- Navbar Section -->
     <section class="nav-section">
         <div id="navbar">
             <div><img id="logo" src="css/logo.jpg" alt=""></div>
-            <br><br><br><br><hr>
+            <hr>
             <div id="trial-info">
                 <span>Free Trial | </span>
                 <span id="days-left">2 days left</span>
@@ -29,25 +33,40 @@
     <!-- Project Section -->
     <div class="container-fluid">
         <div id="sidebar" class="sidebar">
+
             <div id="sidebar-content" class="sidebar-content">
-                <hr>
+                <!-- <hr> -->
                 <br>
-                <img src="css/projects.jpg" height="20px" width="20px" alt="">
-                <span id="span1">My Projects</span> <br> <br>
-                <img src="css/sample.jpg" height="20px" width="20px" alt="">
-                <span id="span">Sample Projects</span>
-                <hr>
-                <img src="css/apps.jpg" height="20px" width="20px" alt="">
-                <span id="span">Apps</span> <br> <br>
-                <img src="css/intro.jpg" height="20px" width="20px" alt="">
-                <span id="span">Intro to Necleo</span>
-                <br><br><br><br><br><br><br><br><br><br>
-                <img src="css/help.jpg" height="20px" width="20px" alt="">
-                <span id="span">Help & Support</span> <br> <br>
-                <img src="css/feedback.jpg" height="20px" width="20px" alt="">
-                <span id="span">Feedback</span> <br> <br>
-                <img src="css/collapse.jpg" height="20px" width="20px" alt="">
-                <span id="span">Collapse</span>
+                <div id="icons-div">
+                    <img src="css/projects.jpg" id="icon" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span1">My Projects</span>
+                </div>
+                <div id="icons-div">
+                    <img src="css/sample.jpg" id="icon" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span">Sample Projects</span>
+                </div>
+                <!-- <hr> -->
+                <div id="icons-div">
+                    <img src="css/apps.jpg" id="icon" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span">Apps</span>
+                </div>
+                <div id="icons-div">
+                    <img src="css/intro.jpg" id="icon" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span">Intro to Necleo</span>
+                </div>
+                <br><br><br><br>
+                <div id="icons-div">
+                    <img src="css/help.jpg" id="icon" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span">Help & Support</span>
+                </div>
+                <div id="icons-div">
+                    <img src="css/feedback.jpg" id="icon" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span">Feedback</span>
+                </div>
+                <div id="icons-div">
+                    <img src="css/collapse.jpg" id="icon" onclick="collapse()" height="20px" width="20px" alt="">
+                    <span class="sidebar-content-text" id="span">Collapse</span>
+                </div>
             </div>
         </div>
 
@@ -56,9 +75,11 @@
                 <h3>My Projects</h3>
                 <div class="white-part">
                     <div id="orangePart" class="orange-part">
-                        <div id="add-card-icon-div"> <img class="add-card-icon" src="css/add-card.png" alt="add-card-icon"></div>
-                        <div class="below-text"> 
-                            <p id="create-new-project-text"> Create a new project</p>  
+                        <div id="add-card-icon-div">
+                            <img class="add-card-icon" src="css/add-card.png" alt="add-card-icon">
+                        </div>
+                        <div class="below-text">
+                            <p id="create-new-project-text"> Create a new project</p>
                             <h6>or try a <span id="sample-project-text">sample project</span></h6>
                         </div>
                     </div>
@@ -71,4 +92,5 @@
 
     <script src="index.js" type="text/javascript"></script>
 </body>
+
 </html>
