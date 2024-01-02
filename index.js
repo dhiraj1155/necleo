@@ -108,9 +108,6 @@ function applyStyles(element, styles) {
     }
 }
 
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
     const orangePart = document.getElementById('orangePart');
     const cardContainer = document.getElementById('card-container');
@@ -177,3 +174,24 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+function collapse() {
+    var sidebarContent = document.getElementById('sidebar');
+    var sidebarContentText = document.getElementsByClassName('sidebar-content-text');
+  
+    if (sidebarContent.style.width === '20%') {
+        sidebarContent.style.width = '2.5%';
+        document.getElementById('card-container').style.width = '96%';
+
+        for (var i = 0; i < sidebarContentText.length; i++) {
+            sidebarContentText[i].style.display = 'none';
+        }
+  
+    } else {
+        sidebarContent.style.width = '20%';
+        document.getElementById('card-container').style.width = '97.5%';
+        
+        for (var i = 0; i < sidebarContentText.length; i++) {
+            sidebarContentText[i].style.display = 'block';
+        }
+    }
+}
